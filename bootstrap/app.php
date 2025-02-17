@@ -13,7 +13,7 @@ declare(strict_types=1);
 |
 */
 
-$app = new SwooleTW\Hyperf\Foundation\Application();
+$app = new LaravelHyperf\Foundation\Application();
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ $app = new SwooleTW\Hyperf\Foundation\Application();
 */
 
 $app->define(
-    SwooleTW\Hyperf\Foundation\Console\Contracts\Kernel::class,
+    LaravelHyperf\Foundation\Console\Contracts\Kernel::class,
     App\Console\Kernel::class
 );
 

@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use SwooleTW\Hyperf\Support\Facades\Artisan;
-use SwooleTW\Hyperf\Support\Facades\Schedule;
+use LaravelHyperf\Support\Facades\Artisan;
+use LaravelHyperf\Support\Facades\Schedule;
 
 /*
 |--------------------------------------------------------------------------

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use SwooleTW\Hyperf\Support\ServiceProvider;
+use LaravelHyperf\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {

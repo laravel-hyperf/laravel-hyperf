@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests\Unit;
 
-use SwooleTW\Hyperf\Foundation\Testing\TestCase;
+use LaravelHyperf\Foundation\Testing\TestCase;
 
 /**
  * @internal

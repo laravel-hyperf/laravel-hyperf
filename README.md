@@ -1,10 +1,10 @@
 <p align="center"><a href="https://laravel-hyperf.com" target="_blank"><img src="https://laravel-hyperf.com/logo.svg" width="400"></a></p>
 
 <p align="center">
-<a href="https://github.com/swooletw/hyperf-packages/actions"><img src="https://github.com/swooletw/hyperf-packages/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/swooletw/hyperf-packages"><img src="https://img.shields.io/packagist/dt/swooletw/hyperf-packages" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/swooletw/hyperf-packages"><img src="https://img.shields.io/packagist/v/swooletw/hyperf-packages" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/swooletw/hyperf-packages"><img src="https://img.shields.io/packagist/l/swooletw/hyperf-packages" alt="License"></a>
+<a href="https://github.com/laravel-hyperf/components/actions"><img src="https://github.com/laravel-hyperf/components/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel-hyperf/components"><img src="https://img.shields.io/packagist/dt/laravel-hyperf/components" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel-hyperf/components"><img src="https://img.shields.io/packagist/v/laravel-hyperf/components" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel-hyperf/components"><img src="https://img.shields.io/packagist/l/laravel-hyperf/components" alt="License"></a>
 </p>
 
 ## Introduction

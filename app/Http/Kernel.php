@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http;
 
-use SwooleTW\Hyperf\Foundation\Http\Kernel as HttpKernel;
+use LaravelHyperf\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {
@@ -27,16 +27,16 @@ class Kernel extends HttpKernel
      */
     protected array $middlewareGroups = [
         'web' => [
-            // \SwooleTW\Hyperf\Router\Middleware\SubstituteBindings::class,
-            // \SwooleTW\Hyperf\Cookie\Middleware\AddQueuedCookiesToResponse::class,
-            // \SwooleTW\Hyperf\Session\Middleware\StartSession::class,
-            // \SwooleTW\Hyperf\View\Middleware\ShareErrorsFromSession::class,
+            // \LaravelHyperf\Router\Middleware\SubstituteBindings::class,
+            // \LaravelHyperf\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+            // \LaravelHyperf\Session\Middleware\StartSession::class,
+            // \LaravelHyperf\View\Middleware\ShareErrorsFromSession::class,
             // \App\Http\Middleware\VerifyCsrfToken::class,
         ],
 
         'api' => [
             // 'throttle:60,1,api',
-            // \SwooleTW\Hyperf\Router\Middleware\SubstituteBindings::class,
+            // \LaravelHyperf\Router\Middleware\SubstituteBindings::class,
         ],
     ];
 
@@ -48,8 +48,8 @@ class Kernel extends HttpKernel
      * @var array<string, class-string|string>
      */
     protected array $middlewareAliases = [
-        'throttle' => \SwooleTW\Hyperf\Router\Middleware\ThrottleRequests::class,
-        'bindings' => \SwooleTW\Hyperf\Router\Middleware\SubstituteBindings::class,
+        'throttle' => \LaravelHyperf\Router\Middleware\ThrottleRequests::class,
+        'bindings' => \LaravelHyperf\Router\Middleware\SubstituteBindings::class,
     ];
 
     /**
@@ -60,10 +60,10 @@ class Kernel extends HttpKernel
      * @var string[]
      */
     protected array $middlewarePriority = [
-        // \SwooleTW\Hyperf\Router\Middleware\ThrottleRequests::class,
-        // \SwooleTW\Hyperf\Router\Middleware\SubstituteBindings::class,
-        // \SwooleTW\Hyperf\Session\Middleware\StartSession::class,
-        // \SwooleTW\Hyperf\View\Middleware\ShareErrorsFromSession::class,
+        // \LaravelHyperf\Router\Middleware\ThrottleRequests::class,
+        // \LaravelHyperf\Router\Middleware\SubstituteBindings::class,
+        // \LaravelHyperf\Session\Middleware\StartSession::class,
+        // \LaravelHyperf\View\Middleware\ShareErrorsFromSession::class,
         // \App\Http\Middleware\VerifyCsrfToken::class,
     ];
 }

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Listeners;
 
-use SwooleTW\Hyperf\Support\Facades\Log;
+use LaravelHyperf\Support\Facades\Log;
 
 class DemoListener
 {

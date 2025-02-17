@@ -1,5 +1,5 @@
 {
-    "name": "swooletw/laravel-hyperf",
+    "name": "laravel-hyperf/laravel-hyperf",
     "type": "project",
     "keywords": [
         "php",
@@ -24,7 +24,7 @@
         "hyperf/validation": "~3.1.0",
         "hyperf/view": "~3.1.0",
         "hyperf/view-engine": "~3.1.0",
-        "swooletw/hyperf-packages": "dev-master"
+        "laravel-hyperf/components": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^2.0",

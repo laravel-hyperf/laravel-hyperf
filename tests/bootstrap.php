@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use SwooleTW\Hyperf\Foundation\Testing\TestScanHandler;
+use LaravelHyperf\Foundation\Testing\TestScanHandler;
 
 ini_set('display_errors', 'on');
 ini_set('display_startup_errors', 'on');

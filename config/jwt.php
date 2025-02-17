@@ -12,7 +12,7 @@ return [
     |
     | The driver you are using to encode, decode and sign your
     | JWT token, all the drivers must implement:
-    | SwooleTW\Hyperf\JWT\Contracts\ProviderContract::class
+    | LaravelHyperf\JWT\Contracts\ProviderContract::class
     |
     */
 
@@ -135,7 +135,7 @@ return [
     |
     */
 
-    'algo' => env('JWT_ALGO', SwooleTW\Hyperf\JWT\Providers\Provider::ALGO_HS256),
+    'algo' => env('JWT_ALGO', LaravelHyperf\JWT\Providers\Provider::ALGO_HS256),
 
     /*
     |--------------------------------------------------------------------------
@@ -146,10 +146,10 @@ return [
     |
     */
     'validations' => [
-        \SwooleTW\Hyperf\JWT\Validations\RequiredClaims::class,
-        // \SwooleTW\Hyperf\JWT\Validations\ExpiredCliam::class,
-        // \SwooleTW\Hyperf\JWT\Validations\IssuedAtClaim::class,
-        // \SwooleTW\Hyperf\JWT\Validations\NotBeforeCliam::class,
+        \LaravelHyperf\JWT\Validations\RequiredClaims::class,
+        // \LaravelHyperf\JWT\Validations\ExpiredCliam::class,
+        // \LaravelHyperf\JWT\Validations\IssuedAtClaim::class,
+        // \LaravelHyperf\JWT\Validations\NotBeforeCliam::class,
     ],
 
     /*
@@ -264,7 +264,7 @@ return [
         |
         */
 
-        'jwt' => SwooleTW\Hyperf\JWT\Providers\Lcobucci::class,
+        'jwt' => LaravelHyperf\JWT\Providers\Lcobucci::class,
 
         /*
         |--------------------------------------------------------------------------
@@ -275,6 +275,6 @@ return [
         |
         */
 
-        'storage' => SwooleTW\Hyperf\JWT\Storage\TaggedCache::class,
+        'storage' => LaravelHyperf\JWT\Storage\TaggedCache::class,
     ],
 ];

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Console;
 
-use SwooleTW\Hyperf\Foundation\Console\Kernel as ConsoleKernel;
-use SwooleTW\Hyperf\Foundation\Console\Scheduling\Schedule;
+use LaravelHyperf\Foundation\Console\Kernel as ConsoleKernel;
+use LaravelHyperf\Foundation\Console\Scheduling\Schedule;
 
 class Kernel extends ConsoleKernel
 {

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use SwooleTW\Hyperf\Foundation\Support\Providers\EventServiceProvider as BaseServiceProvider;
+use LaravelHyperf\Foundation\Support\Providers\EventServiceProvider as BaseServiceProvider;
 
 class EventServiceProvider extends BaseServiceProvider
 {

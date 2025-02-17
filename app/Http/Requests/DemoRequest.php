@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Requests;
 
-use SwooleTW\Hyperf\Foundation\Http\FormRequest;
+use LaravelHyperf\Foundation\Http\FormRequest;
 
 class DemoRequest extends FormRequest
 {

@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Hyperf\Stringable\Str;
-use SwooleTW\Hyperf\Cache\SwooleStore;
+use LaravelHyperf\Cache\SwooleStore;
 
 use function Hyperf\Support\env;
 

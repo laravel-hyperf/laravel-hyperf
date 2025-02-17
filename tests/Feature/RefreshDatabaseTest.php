@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests\Feature;
 
 use App\Models\User;
-use SwooleTW\Hyperf\Foundation\Testing\RefreshDatabase;
+use LaravelHyperf\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 /**

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Models;
 
-use SwooleTW\Hyperf\Foundation\Auth\User as Authenticatable;
+use LaravelHyperf\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {

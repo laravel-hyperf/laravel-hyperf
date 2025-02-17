@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Middleware;
 
-use SwooleTW\Hyperf\Foundation\Http\Middleware\TrimStrings as Middleware;
+use LaravelHyperf\Foundation\Http\Middleware\TrimStrings as Middleware;
 
 class TrimStrings extends Middleware
 {

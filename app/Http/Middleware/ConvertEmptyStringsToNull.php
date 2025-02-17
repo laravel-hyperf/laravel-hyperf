@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Middleware;
 
-use SwooleTW\Hyperf\Foundation\Http\Middleware\ConvertEmptyStringsToNull as Middleware;
+use LaravelHyperf\Foundation\Http\Middleware\ConvertEmptyStringsToNull as Middleware;
 
 class ConvertEmptyStringsToNull extends Middleware
 {

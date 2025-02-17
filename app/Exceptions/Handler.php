@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Exceptions;
 
-use SwooleTW\Hyperf\Foundation\Exceptions\Handler as ExceptionHandler;
-use SwooleTW\Hyperf\Http\Request;
+use LaravelHyperf\Foundation\Exceptions\Handler as ExceptionHandler;
+use LaravelHyperf\Http\Request;
 use Throwable;
 
 class Handler extends ExceptionHandler
