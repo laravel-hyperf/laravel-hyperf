@@ -12,6 +12,9 @@ return [
         'view_path' => base_path('resources/views'),
         'cache_path' => storage_path('framework/views'),
     ],
+    'event' => [
+        'enable' => false,
+    ],
     'components' => [
     ],
 ];
