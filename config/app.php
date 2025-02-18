@@ -164,6 +164,7 @@ return [
         'Artisan' => LaravelHyperf\Support\Facades\Artisan::class,
         'Auth' => LaravelHyperf\Support\Facades\Auth::class,
         'Blade' => LaravelHyperf\Support\Facades\Blade::class,
+        'Broadcast' => LaravelHyperf\Support\Facades\Broadcast::class,
         'Bus' => LaravelHyperf\Support\Facades\Bus::class,
         'Cache' => LaravelHyperf\Support\Facades\Cache::class,
         'Config' => LaravelHyperf\Support\Facades\Config::class,
