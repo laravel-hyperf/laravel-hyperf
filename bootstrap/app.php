@@ -30,6 +30,6 @@ $app->define(
     App\Console\Kernel::class
 );
 
-LaravelHyperf\Foundation\ApplicationContext::setContainer($app);
+LaravelHyperf\Context\ApplicationContext::setContainer($app);
 
 return $app;
