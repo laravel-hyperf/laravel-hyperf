@@ -55,5 +55,9 @@ return [
         'component' => [
             'namespace' => 'App\View\Component',
         ],
+        'channel' => [
+            'namespace' => 'App\Broadcasting',
+            'uses' => App\Models\User::class,
+        ],
     ],
 ];
