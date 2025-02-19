@@ -19,7 +19,7 @@
         "friendsofhyperf/tinker": "~3.1.0",
         "hyperf/paginator": "~3.1.0",
         "hyperf/view-engine": "~3.1.0",
-        "laravel-hyperf/framework": "dev-main"
+        "laravel-hyperf/framework": "^0.1"
     },
     "require-dev": {
         "fakerphp/faker": "^2.0",
