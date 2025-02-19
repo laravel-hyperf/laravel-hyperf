@@ -18,24 +18,19 @@
         "ext-session": "*",
         "friendsofhyperf/tinker": "~3.1.0",
         "hyperf/paginator": "~3.1.0",
-        "hyperf/redis": "~3.1.0",
-        "hyperf/validation": "~3.1.0",
-        "hyperf/view": "~3.1.0",
         "hyperf/view-engine": "~3.1.0",
-        "laravel-hyperf/components": "dev-main"
+        "laravel-hyperf/framework": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^2.0",
         "filp/whoops": "^2.15",
         "friendsofphp/php-cs-fixer": "^3.57.2",
-        "hyperf/devtool": "~3.1.0",
+        "laravel-hyperf/devtool": "dev-main",
         "hyperf/testing": "~3.1.0",
-        "hyperf/watcher": "~3.1.0",
-        "league/flysystem": "^3.0",
-        "league/flysystem-path-prefixing": "^3.3",
-        "league/flysystem-read-only": "^3.3",
-        "league/flysystem-aws-s3-v3": "*",
-        "phpstan/phpstan": "^1.0"
+        "mockery/mockery": "^1.5.1",
+        "phpstan/phpstan": "^1.11.5",
+        "phpunit/phpunit": "^10.0.7",
+        "swoole/ide-helper": "~5.1.0"
     },
     "autoload": {
         "psr-4": {
@@ -53,6 +48,28 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "suggest": {
+        "ext-fileinfo": "Required to use the Filesystem class.",
+        "ext-ftp": "Required to use the Flysystem FTP driver.",
+        "ext-hash": "Required to use the Filesystem class.",
+        "ext-pcntl": "Required to use all features of the queue worker.",
+        "ext-posix": "Required to use all features of the queue worker.",
+        "ably/ably-php": "Required to use the Ably broadcast driver (^1.0).",
+        "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^6.0|^7.0).",
+        "league/flysystem": "Required to use the Flysystem local driver (^3.0.16).",
+        "league/flysystem-path-prefixing": "Required to use the scoped driver (^3.3).",
+        "league/flysystem-read-only": "Required to use read-only disks (^3.3)",
+        "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^3.0).",
+        "flysystem-google-cloud-storage": "Required to use the Flysystem Google Cloud Storage driver (^3.0).",
+        "league/flysystem-ftp": "Required to use the Flysystem FTP driver (^3.0).",
+        "league/flysystem-sftp-v3": "Required to use the Flysystem SFTP driver (^3.0).",
+        "laravel-hyperf/http": "Required to allow Storage::put to accept a StreamInterface.",
+        "aws/aws-sdk-php": "Required to use the SQS queue driver, DynamoDb failed job storage, and SES mail driver (^3.322.9).",
+        "symfony/http-client": "Required to use the Symfony API mail transports (^6.2).",
+        "symfony/mailgun-mailer": "Required to enable support for the Mailgun mail transport (^6.2).",
+        "symfony/postmark-mailer": "Required to enable support for the Postmark mail transport (^6.2).",
+        "pda/pheanstalk": "Required to use the Beanstalk queue driver (^5.0)."
+    },
     "config": {
         "optimize-autoloader": true,
         "sort-packages": true
