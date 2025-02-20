@@ -29,7 +29,7 @@ return [
         'enable_static_handler' => true,
         Constant::OPTION_ENABLE_COROUTINE => true,
         Constant::OPTION_WORKER_NUM => swoole_cpu_num(),
-        Constant::OPTION_PID_FILE => base_path('runtime/hyperf.pid'),
+        Constant::OPTION_PID_FILE => base_path('runtime/laravel-hyperf.pid'),
         Constant::OPTION_OPEN_TCP_NODELAY => true,
         Constant::OPTION_MAX_COROUTINE => 100000,
         Constant::OPTION_OPEN_HTTP2_PROTOCOL => true,
