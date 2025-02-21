@@ -59,5 +59,9 @@ return [
             'namespace' => 'App\Broadcasting',
             'uses' => App\Models\User::class,
         ],
+        'observer' => [
+            'namespace' => 'App\Observers',
+            'model_namespace' => 'App\Models',
+        ],
     ],
 ];
