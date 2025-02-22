@@ -17,20 +17,20 @@
         "ext-redis": "*",
         "ext-session": "*",
         "friendsofhyperf/tinker": "~3.1.0",
-        "hyperf/paginator": "~3.1.0",
-        "hyperf/view-engine": "~3.1.0",
         "laravel-hyperf/framework": "^0.1"
     },
     "require-dev": {
         "fakerphp/faker": "^2.0",
         "filp/whoops": "^2.15",
         "friendsofphp/php-cs-fixer": "^3.57.2",
-        "laravel-hyperf/devtool": "dev-main",
         "hyperf/testing": "~3.1.0",
+        "laravel-hyperf/devtool": "dev-main",
         "mockery/mockery": "^1.5.1",
+        "nunomaduro/collision": "^8.5",
         "phpstan/phpstan": "^1.11.5",
         "phpunit/phpunit": "^10.0.7",
-        "swoole/ide-helper": "~5.1.0"
+        "swoole/ide-helper": "~5.1.0",
+        "hyperf/watcher": "~3.1.0"
     },
     "autoload": {
         "psr-4": {
