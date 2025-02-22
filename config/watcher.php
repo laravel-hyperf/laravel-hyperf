@@ -7,6 +7,7 @@ use Hyperf\Watcher\Driver\ScanFileDriver;
 return [
     'driver' => ScanFileDriver::class,
     'bin' => PHP_BINARY,
+    'command' => 'artisan serve',
     'watch' => [
         'dir' => ['app', 'config', 'routes', 'resources'],
         'file' => ['.env'],
