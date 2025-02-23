@@ -48,6 +48,8 @@ class Kernel extends HttpKernel
      * @var array<string, class-string|string>
      */
     protected array $middlewareAliases = [
+        'auth' => \App\Http\Middleware\Authenticate::class,
+        'can' => \LaravelHyperf\Auth\Middleware\Authorize::class,
         'throttle' => \LaravelHyperf\Router\Middleware\ThrottleRequests::class,
         'bindings' => \LaravelHyperf\Router\Middleware\SubstituteBindings::class,
     ];
