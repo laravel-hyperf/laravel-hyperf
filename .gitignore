@@ -13,3 +13,9 @@
 *.cache
 /.vscode
 .phpactor.json
+/public/storage
+/storage/*.key
+/node_modules
+/.phpunit.cache
+.phpactor.json
+.phpunit.result.cache
