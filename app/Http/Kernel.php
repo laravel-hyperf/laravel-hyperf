@@ -52,6 +52,7 @@ class Kernel extends HttpKernel
         'can' => \LaravelHyperf\Auth\Middleware\Authorize::class,
         'throttle' => \LaravelHyperf\Router\Middleware\ThrottleRequests::class,
         'bindings' => \LaravelHyperf\Router\Middleware\SubstituteBindings::class,
+        'signed' => \App\Http\Middleware\ValidateSignature::class,
     ];
 
     /**
