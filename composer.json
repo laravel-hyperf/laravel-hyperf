@@ -15,7 +15,6 @@
     "require": {
         "php": ">=8.2",
         "ext-redis": "*",
-        "ext-session": "*",
         "friendsofhyperf/tinker": "~3.1.0",
         "laravel-hyperf/framework": "^0.1"
     },
