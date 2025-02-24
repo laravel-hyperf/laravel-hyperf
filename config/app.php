@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use LaravelHyperf\Support\ServiceProvider;
 use Psr\Log\LogLevel;
 
 return [
@@ -151,13 +152,19 @@ return [
         ),
     ],
 
-    'providers' => [
-        LaravelHyperf\Foundation\Providers\FoundationServiceProvider::class,
-        LaravelHyperf\Foundation\Providers\FormRequestServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+    'providers' => ServiceProvider::defaultProviders()->merge([
+        /*
+         * Package Service Providers...
+         */
+
+        /*
+         * Application Service Providers...
+         */
         App\Providers\AppServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-    ],
+        App\Providers\RouteServiceProvider::class,
+    ])->toArray(),
 
     'aliases' => [
         'App' => LaravelHyperf\Support\Facades\App::class,
