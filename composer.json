@@ -25,7 +25,6 @@
         "hyperf/testing": "~3.1.0",
         "laravel-hyperf/devtool": "dev-main",
         "mockery/mockery": "^1.5.1",
-        "nunomaduro/collision": "^8.5",
         "phpstan/phpstan": "^1.11.5",
         "phpunit/phpunit": "^10.0.7",
         "swoole/ide-helper": "~5.1.0",
