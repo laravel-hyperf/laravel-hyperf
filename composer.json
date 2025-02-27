@@ -23,12 +23,13 @@
         "filp/whoops": "^2.15",
         "friendsofphp/php-cs-fixer": "^3.57.2",
         "hyperf/testing": "~3.1.0",
+        "hyperf/watcher": "~3.1.0",
         "laravel-hyperf/devtool": "dev-main",
         "mockery/mockery": "^1.5.1",
+        "nunomaduro/collision": "^8.5",
         "phpstan/phpstan": "^1.11.5",
         "phpunit/phpunit": "^10.0.7",
-        "swoole/ide-helper": "~5.1.0",
-        "hyperf/watcher": "~3.1.0"
+        "swoole/ide-helper": "~5.1.0"
     },
     "autoload": {
         "psr-4": {
@@ -70,7 +71,11 @@
         "optimize-autoloader": true,
         "sort-packages": true
     },
-    "extra": [],
+    "extra": {
+        "laravel-hyperf": {
+            "dont-discover": []
+        }
+    },
     "scripts": {
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
