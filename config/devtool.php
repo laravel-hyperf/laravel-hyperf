@@ -63,5 +63,11 @@ return [
             'namespace' => 'App\Observers',
             'model_namespace' => 'App\Models',
         ],
+        'mail' => [
+            'namespace' => 'App\Mail',
+        ],
+        'notification' => [
+            'namespace' => 'App\Notifications',
+        ],
     ],
 ];
