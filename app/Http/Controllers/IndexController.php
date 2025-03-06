@@ -10,7 +10,7 @@ class IndexController extends AbstractController
 {
     public function index(Request $request): array
     {
-        $user = $request->input('user', 'Hyperf');
+        $user = $request->input('user', 'Laravel Hyperf');
         $method = $request->getMethod();
 
         return [
