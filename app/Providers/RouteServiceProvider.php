@@ -20,15 +20,15 @@ class RouteServiceProvider extends BaseServiceProvider
         parent::boot();
 
         Route::group(
-            '/',
-            base_path('routes/web.php'),
-            ['middleware' => 'web']
-        );
-
-        Route::group(
             '/api',
             base_path('routes/api.php'),
             ['middleware' => 'api']
+        );
+
+        Route::group(
+            '/',
+            base_path('routes/web.php'),
+            ['middleware' => 'web']
         );
     }
 }

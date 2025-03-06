@@ -147,7 +147,7 @@ return [
     */
     'validations' => [
         \LaravelHyperf\JWT\Validations\RequiredClaims::class,
-        // \LaravelHyperf\JWT\Validations\ExpiredCliam::class,
+        \LaravelHyperf\JWT\Validations\ExpiredCliam::class,
         // \LaravelHyperf\JWT\Validations\IssuedAtClaim::class,
         // \LaravelHyperf\JWT\Validations\NotBeforeCliam::class,
     ],
