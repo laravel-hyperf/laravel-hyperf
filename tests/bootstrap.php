@@ -31,7 +31,7 @@ define('BASE_PATH', $dir);
 
 require BASE_PATH . '/vendor/autoload.php';
 
-Hyperf\Di\ClassLoader::init(null, null, new TestScanHandler());
+LaravelHyperf\Foundation\ClassLoader::init(null, null, new TestScanHandler());
 
 $app = require BASE_PATH . '/bootstrap/app.php';
 
