@@ -190,6 +190,7 @@ return [
         'Log' => LaravelHyperf\Support\Facades\Log::class,
         'Mail' => LaravelHyperf\Support\Facades\Mail::class,
         'Notification' => LaravelHyperf\Support\Facades\Notification::class,
+        'Process' => LaravelHyperf\Support\Facades\Process::class,
         'Queue' => LaravelHyperf\Support\Facades\Queue::class,
         'RateLimiter' => LaravelHyperf\Support\Facades\RateLimiter::class,
         'Redis' => LaravelHyperf\Support\Facades\Redis::class,
