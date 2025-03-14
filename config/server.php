@@ -13,8 +13,8 @@ return [
         [
             'name' => 'http',
             'type' => Server::SERVER_HTTP,
-            'host' => '0.0.0.0',
-            'port' => 9501,
+            'host' => env('HTTP_SERVER_HOST', '0.0.0.0'),
+            'port' => (int) env('HTTP_SERVER_PORT', 9501),
             'sock_type' => SWOOLE_SOCK_TCP,
             'callbacks' => [
                 Event::ON_REQUEST => [HttpKernel::class, 'onRequest'],
@@ -28,7 +28,7 @@ return [
         'document_root' => base_path('public'),
         'enable_static_handler' => true,
         Constant::OPTION_ENABLE_COROUTINE => true,
-        Constant::OPTION_WORKER_NUM => swoole_cpu_num(),
+        Constant::OPTION_WORKER_NUM => env('SERVER_WORKERS_NUMBER', swoole_cpu_num()),
         Constant::OPTION_PID_FILE => base_path('runtime/laravel-hyperf.pid'),
         Constant::OPTION_OPEN_TCP_NODELAY => true,
         Constant::OPTION_MAX_COROUTINE => 100000,

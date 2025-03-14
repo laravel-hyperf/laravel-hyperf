@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Hyperf\Stringable\Str;
+use LaravelHyperf\Support\Str;
 
 return [
     /*
