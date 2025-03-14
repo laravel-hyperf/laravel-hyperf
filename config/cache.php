@@ -2,10 +2,8 @@
 
 declare(strict_types=1);
 
-use Hyperf\Stringable\Str;
 use LaravelHyperf\Cache\SwooleStore;
-
-use function Hyperf\Support\env;
+use LaravelHyperf\Support\Str;
 
 return [
     /*
