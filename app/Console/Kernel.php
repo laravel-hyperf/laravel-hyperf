@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Console;
 
 use LaravelHyperf\Foundation\Console\Kernel as ConsoleKernel;
-use LaravelHyperf\Foundation\Console\Scheduling\Schedule;
+use LaravelHyperf\Scheduling\Schedule;
 
 class Kernel extends ConsoleKernel
 {
