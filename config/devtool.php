@@ -69,5 +69,9 @@ return [
         'notification' => [
             'namespace' => 'App\Notifications',
         ],
+        'policy' => [
+            'namespace' => 'App\Policies',
+            'model_namespace' => 'App\Models',
+        ],
     ],
 ];
