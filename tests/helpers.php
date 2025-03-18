@@ -2,33 +2,14 @@
 
 declare(strict_types=1);
 
-use Hyperf\Context\ApplicationContext;
-use Hyperf\Database\Model\Factory;
+use Hyperf\Testing\ModelFactory;
+use LaravelHyperf\Context\ApplicationContext;
 
-/**
- * @return null|FactoryBuilder
- * @throws TypeError
- * @throws NotFoundExceptionInterface
- * @throws ContainerExceptionInterface
- */
-function factory(string $class)
-{
-    $container = ApplicationContext::getContainer();
-
-    if (is_null($container)) {
-        return null;
+if (! function_exists('factory')) {
+    function factory(string $class)
+    {
+        return ApplicationContext::getContainer()
+            ->get(ModelFactory::class)
+            ->factory($class);
     }
-
-    $factory = $container->get(Factory::class);
-    $arguments = func_get_args();
-
-    if (isset($arguments[1]) && is_string($arguments[1])) {
-        return $factory->of($arguments[0], $arguments[1])->times($arguments[2] ?? null);
-    }
-
-    if (isset($arguments[1])) {
-        return $factory->of($arguments[0])->times($arguments[1]);
-    }
-
-    return $factory->of($arguments[0]);
 }
